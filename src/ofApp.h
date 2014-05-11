@@ -9,7 +9,8 @@ public:
     void setup();
     void addObjects();
     void draw();
+    void exit();
     
     evtObject singleObject;
-    vector<evtObject> objectsVector;
+    vector<evtObject*> objectsVector;
 };
