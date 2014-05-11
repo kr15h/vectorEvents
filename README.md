@@ -1,13 +1,13 @@
 vectorEvents
 ============
 
-This is *solved*. To make openFrameworks events work within an object that is being added to a vector, allocate it dynamically by using the new keyword:
+This is **solved**. To make openFrameworks events work within an object that is being added to a vector, allocate it dynamically by using the new keyword:
 
 ```C++
 myVector.push_back( new myObject() );
 ```
 
-Don't forget to `delete` all allocated objects before you `pop_back()` the pointer of the object:
+Don't forget to `delete` allocated objects before you `pop_back()` the pointer of the object:
 
 ```C++
 while( myVector.size() ){
